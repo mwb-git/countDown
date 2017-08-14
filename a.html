@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="js/countDown.js" ></script>
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js" ></script>
+		<style>
+			#htm{
+				color: red;
+				font-size: 36px;
+				width: 240px;
+				border: 2px solid darkgoldenrod;
+				text-align: center;
+				line-height: 36px;
+			}
+			#htm2{
+				color: red;
+				font-size: 36px;
+				width: 420px;
+				border: 2px solid darkgoldenrod;
+				text-align: center;
+				line-height: 36px;
+			}
+			#htm3{
+				color: red;
+				font-size: 36px;
+				width: 420px;
+				border: 2px solid darkgoldenrod;
+				text-align: center;
+				line-height: 36px;
+			}
+		</style>
+	</head>
+	<body>
+		<p id="htm"></p>
+		<p id="htm2"></p>
+		<p id="htm3"></p>
+	</body>
+	<script>
+	$(function(){
+		
+	
+		new countDown({
+			endTime:"10",
+			timeBox:"htm",
+			dayShowBtn:false,
+			secandsBtn:true
+		},function(){
+			alert("下班了！！！！！");
+		});
+		
+		new countDown({
+			endTime:"2017-12-9 18:15:00",
+			timeBox:"htm2",
+			dayShowBtn:true,
+			secandsBtn:false
+		},function(){
+			
+		});
+		
+		new countDown({
+			endTime:"18:00:00",
+			timeBox:"htm3",
+			dayShowBtn:false,
+			secandsBtn:false
+		},function(){
+			
+		});
+})
+		
+	</script>
+</html>
