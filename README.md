@@ -5,16 +5,11 @@
 	
   <script>
   new countDown({
-	
 			endTime:"10",
-	
 			timeBox:"htm",
-	
 			dayShowBtn:false,
-	
 			secandsBtn:true
 		},function(){
-		
 			alert("下班了！！！！！");
 		});
     </script>
