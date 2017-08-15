@@ -2,26 +2,39 @@
 	<body>
 		<p id="htm"></p>
 	</body>
+	
   <script>
   new countDown({
+	
 			endTime:"10",
+	
 			timeBox:"htm",
+	
 			dayShowBtn:false,
+	
 			secandsBtn:true
 		},function(){
+		
 			alert("下班了！！！！！");
 		});
     </script>
     
    创建比较简单，只要传入几个参数就可以了！
+   
    endTime参数可以传入三种形式：
+   
    第一种：“2017-8-20 18:00:00”，传入这种形式的参数表示倒计时到多少天后结束！
+   
    第二种：“18:00:00”，传入这种形式的参数表示倒计时是在每天的18点钟结束！
+   
    （注意：以上两种情况secandsBtn必须为true）
+   
    第三种：“60”，传入这种形式的参数表示倒计时为60s！（注意：此种情况secandsBtn必须为true）
    
    timebox参数：
+   
    表示展示倒计时的元素。
+   
    注意：只接受id值
    
    dayShowBtn参数：
